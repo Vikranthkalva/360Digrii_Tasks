@@ -1,0 +1,135 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fruits_Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f3f6fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: auto;
+            margin: auto;
+            background: #fff;
+            box-shadow: 0 4px 18px rgba(44, 62, 80, .15);
+            border-radius: 12px;
+            padding: 32px 30px 18px 30px;
+        }
+
+        .title {
+            color: #c63c3c;
+            font-weight: bold;
+            font-size: 1.85em;
+            letter-spacing: 1px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .navbar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .navbar a {
+            margin: 0 8px;
+            text-decoration: none;
+            color: #4477cc;
+            font-weight: 600;
+            font-size: 1.05em;
+            transition: color 0.2s;
+            padding: 6px 12px;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            background: #e8f0fa;
+            color: #c63c3c;
+        }
+
+         .table {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer {
+            margin-top: 35px;
+            text-align: center;
+            font-size: .95em;
+            color: black;
+            letter-spacing: 1px;
+            padding-top: 25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">360DigriiBasket
+             <img src="groceriesbasket.jpg" alt="basket" width="40px" height="40px">
+        </div>
+        <div class="navbar">
+            <a href="Home.html">
+               <img src="home.png" alt="Home" width="20px" height="20px">
+            </a> | 
+            <a href="Fruits.html" class="active">
+                <img src="basket.png" alt="Fruits" width="20px" height="20px">
+            </a> | 
+            <a href="Flower.html">
+                <img src="flower.png" alt="Fruits" width="20px" height="20px">
+            </a>
+        </div>
+       <div class="table">
+            <caption>List of Flowers</caption>
+            <table border="2px">
+                <thead>
+                    <tr>
+                        <td>S.No</td>
+                        <td>Item</td>
+                        <td>Quantity</td>
+                        <td>Photo</td>
+                        <td>About</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>Apple</td>
+                    <td>4</td>
+                    <td><img src="data:image/webp;base64,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"alt="Apple" width="50px" height="50px"></td>
+                    <td><a href="https://en.wikipedia.org/wiki/Apple">View More</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mango</td>
+                    <td>3</td>
+                    <td><img src="data:image/webp;base64,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"
+                            alt="Mango" width="50px" height="50px"></td>
+                    <td><a href="https://en.wikipedia.org/wiki/Mango">View More</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Orange</td>
+                    <td>9</td>
+                    <td><img src="https://th.bing.com/th/id/OIP.7huLRNPqmaJpE5fng0fNuwHaHa?w=178&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"alt="Orange" width="50px" height="50px"></td>
+                    <td><a href="https://en.wikipedia.org/wiki/Orange_(fruit)">View More</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td colspan="3">16</td>
+                </tr>
+
+            </table>
+
+        </div>
+        <div class="footer" >copyright@360Digrii</div>
+    </div>
+    
+
+</body>
+
+</html>

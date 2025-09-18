@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flowers_Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f3f6fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: auto;
+            margin: auto;
+            background: #fff;
+            box-shadow: 0 4px 18px rgba(44, 62, 80, .15);
+            border-radius: 12px;
+            padding: 32px 30px 18px 30px;
+        }
+
+        .title {
+            color: #c63c3c;
+            font-weight: bold;
+            font-size: 1.85em;
+            letter-spacing: 1px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .navbar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .navbar a {
+            margin: 0 8px;
+            text-decoration: none;
+            color: #4477cc;
+            font-weight: 600;
+            font-size: 1.05em;
+            transition: color 0.2s;
+            padding: 6px 12px;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            background: #e8f0fa;
+            color: #c63c3c;
+        }
+
+        .table {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        .footer {
+            margin-top: 35px;
+            text-align: center;
+            font-size: .95em;
+            color: black;
+            letter-spacing: 1px;
+            padding-top: 18rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">360DigriiBasket
+             <img src="groceriesbasket.jpg" alt="basket" width="40px" height="40px">
+        </div>
+        <div class="navbar">
+            <a href="Home.html">
+                <img src="home.png" alt="Home" width="20px" height="20px">
+            </a> |
+            <a href="Fruits.html">
+                <img src="basket.png" alt="Fruits" width="20px" height="20px">
+            </a> |
+            <a href="Flower.html" class="active">
+                <img src="flower.png" alt="Fruits" width="20px" height="20px">
+            </a>
+        </div>
+        <div class="table">
+            <caption>List of Flowers</caption>
+            <table border="2px">
+                <thead>
+                    <tr>
+                        <td>S.No</td>
+                        <td>Item</td>
+                        <td>Quantity</td>
+                        <td>Photo</td>
+                        <td>About</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>Lilly</td>
+                    <td>4</td>
+                    <td><img src="data:image/webp;base64,UklGRvwHAABXRUJQVlA4IPAHAAAwPwCdASoFAQUBPp1MoUylpCMiIbIqMLATiWlu4XKQ9/szthlcJisyg1rc9L4K/30WFA0c/JOKNFpwlnReiV+FKBo5+P3a4YrfCWdF6JX1UlesS1dJ3WszJ9buwo70MswH/TGIzKEr8KT86oz6vVoIinr1HmuXMeibv8uNTFZSm7xsnCWcb0UPQV8COjc15APoi3zJnK5sZKtNq3CA/IphRBXecUk4hMayUZP4brS9VNcl9RaiyIWwVBtTVrBBfpaqiX3fEBQ6txnX/xLLmLPnweYM/7iUC2wVQDuxFEJVWJhjiKC5IEfyfpfNJKYb3mHBJqTNrLVolWwpFUDwu1b1f4YVlmzL6FRtgBot0wRW0i9+fd//mEH3QeFSXTV0SPiAEKZ39IxTGn8qGUNSZE2uXozAGJQE5tf+QKkFfBhQsSlQuXVTEYWk3koIx5gdrRXO2utScE9Mv+2k+EJ0JJd2C84RPgAPWrX/wu/X/4p0L2lptiOuCqlhqzC2m4WfY6wnpLmm19kGxWelcRhnpSgVUQGkhU/f7YlnQ2NtRAKQmyOF15c2O85vX/6tOsDG2zPQEsB5YyWPeGfovRK8QqOLd4lNlAYyv0fVOX91kgY2SCLqAB6xeiV+FKB2HSKVLlL1KUF2ZBsaOfknFGkUfClA0c/JOKNFpwlnReiV+FKBo1wAAP7/BBAAAADC+IFV06b4zi+6CGUKdZII9yl+YYS3s1zdlTN0kR3Z7jl0sQjsne+yQDutshXfJ5DmHEO7xurmkQ/3hfH/y4Xv4AwXhkeFreNUXZKKmo1pFQD9cVe14CjE+wjYWRkkos0h7U9+BFlxr5o98wwbWTp/QCJZJnSVk+RVtZVik66zLFFsQzXNwbMGpNpczWHTpaRm2rC7HGdvbCoPFLH9/SkY4yPq38BRBwnnRJs0y0EqUzO9+tMVoWSriwvgxvptMQm6hYLWSlliK2VxvPR7OAJbOibltifh63RccZERsluUUM76tpwc8vYyKojSEk1gZn7uYdBUE+KBIBnRpoPkpCD5zMsbisUvRhUDLstL3sm0nPA7Bpo7BVjuT+ns1iwWjRtjoOP+oNXM0YDDHePs50JnfPgCU/EUBYAUEXlgLJw8QNIRMeoq4SkvXXYFlsfrNmMaOw2/KRJzJ3PQI8BxpZwT1n1vPtxl6zBz/PSbOuGSmnPmJwXjVFnA1MFd0qIhAmifDUSOCpMiL5nUqzp3cx5DhfwHu7yD/kBJA8DTIIFh8GIgDymkcIwI1Tcd6T93VmEmHb1yV6e9pqqUmQIOGgK0eSnrrJOnTcQILclnhGFNx009pE0rwyRvZuTUQlhDqAt8dY44I387gbN0CEzjHbC+lVG5HoFdQjfLfUjomC90EyqGChXp0C1dxPeqzJ0HRGfeFB95ls1HSywP27bFbXlytsAxqsfMNvulAtWVMDzIMWJwD+tR04iDVzDOtyoWSvnzugXqPpo986HIWg2HxZGPaAYw+kZxNssRu9PL6GhwW13ynxXDqZf6q3eagX4gSuynk+uQOk8toEypfUPS4KprGhCyfok/VVrvkFBengZNFlSXReSh9v2WZzLE6RzYP9AdMR9Q6UZHefuwTZdRq4sEuAorQQvuFeWBTJtCfAmwWyy1mDj3tq9BrWLtCNm8Pg1M3ROb1PgVMz2kY79NGUCBE6Na9CfvS1RIHhI4+sVquhSHMdPEhtKfRGBYTGNHNLmL76AhIeaiXyBcxAJbvZrqOVqpKQxU/1zjYTSeIh/Ox+7Ck6aVE241nIBkJU2F3Wphjmdee+M+LO0KjKvqc8fXJzJ6Sj3KAtJQDslZ95D8ep15zqJeXjQx4K12S6OmT90WCOddY586dh31UfJk8r3nqFmsCvOHh8Sp1yK2B1pQOFWrpQegohXeTHdsqkLpRd61NSfIhCY2TK0h2c+r5//jh4uDJme1bU99A/vwmI8fo32EpxWLBRbEo5MTTJF9KvHuxdGg1uP4AGYXK3rGB9p2W+zeykNMSRUOlOX0ZluA2VYVzYdiuFtQI54oQlmalQpeLHyHALeEVP3OiYPqCKkxQS6jCHBxr96Ix0N026Yqdj1CQK17TPltxeEktLMMGmwDhXaW/LckIoPv8YXILmE7olf4gYHXv5iEI1xhFOxOOv+fJ+P8oRUZFQtGy6ZUA5shOXT9jWDMxA8mwVzatxSUwVCxqbTRA+2so0gj+kbQGjwxFE8owpz+iBF/SwtpNtAIIjewBrUFv4ILU3yWywIBXr88Ad9O9PhKHAJrFmfqqumge6B/vvRLF9JFjHLEzWaJ6XiAbQKynZIoJYIIV0ieC6bU6JYcK1VCGMvc7Eo5hVzjmtNz8Clp6lwRegFSqxcXrxNdrdZnGeXZEdkiBOg5JRhHvU9mx6jCt6QnQb0aY/UcsQQkFAXlpeOr50tMNPUvhBygU0W1k/r9+nutd29o3LbHK9YnRSSnie7MwgL4km/uSlndxbUhU1TJ9ETN+ZmiAWv9TZU+3VC0S6H8kcyrZz9/489Ox/KwfSrtxL6fAfgMMvIrv1jA7FJ9RjtzQ0jvIAAsV62QXAA4fVek3ZWs5jgNGd8iK0hefsbcyoyfekI5g+S8mu7nl6TJ7OLdxPIinsQtF4+JPFcFk3THpYXR4Au3ZH/E3+/waBqN2YDGTvqHMNOaQO6NAseQwASdSHjhtJTUUv/uxrwFIIzHocGAAAAAAAAA"
+                            alt="Lilly" width="50px" height="50px"></td>
+                    <td><a href="https://en.wikipedia.org/wiki/Lilium">View More</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Rose</td>
+                    <td>3</td>
+                    <td><img src="https://th.bing.com/th/id/OIP.9CP5rzR4hlfIq6hbM7e2XAHaF7?w=243&h=194&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                            alt="Rose" width="50px" height="50px"></td>
+                    <td><a href="https://en.wikipedia.org/wiki/Rose">View More</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Jasmine</td>
+                    <td>9</td>
+                    <td><img src="https://th.bing.com/th/id/OIP.7KxYaZtRRSrwR3SAZGU4-wHaGX?w=229&h=197&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                            alt="Jasmine" width="50px" height="50px"></td>
+                    <td><a href="https://en.wikipedia.org/wiki/Jasmine">View More</a></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td colspan="3">16</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+
+        <div class="footer">copyright@360Digrii</div>
+    </div>
+
+
+
+</body>
+
+</html>
