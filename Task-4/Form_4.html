@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+       form{
+        margin-top: 50px;
+       }
+        table {
+            margin-top: auto;
+            width: 70%;
+            margin: auto;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            border: 10px solid rgb(247, 132, 234);
+            
+        }
+
+        td {
+            padding: 15px;
+            vertical-align: top;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"] {
+            width: 95%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .gender-options {
+            margin-top: 6px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .gender-options label {
+            margin-right: 15px;
+            font-weight: normal;
+        }
+        select{
+           width: 170%;
+           height: 30px;
+              border-radius: 5px;
+              background-color: rgba(187, 185, 185, 0.836);
+        }
+        button{
+            width: 80px;
+            height: 30px;
+            background-color: blue;
+            color: white;
+            box-shadow: 4px 2px 5px grey;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        
+        <table>
+            <tr>
+                <td>
+                    <h1>Registration Form</h1>
+                </td>
+                
+            </tr>
+            
+            <!-- First & Last Name -->
+            <tr>
+                <td>
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="First Name">
+                </td>
+                <td>
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+                </td>
+            </tr>
+
+            <!-- Birthday & Gender -->
+            <tr>
+                <td>
+                    <label for="bday">Birthday</label>
+                    <input type="date" id="bday" name="bday">
+                </td>
+                <td>
+                    <label>Gender</label>
+                    <div class="gender-options">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Email & Phone -->
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </td>
+                <td>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phonenumber" placeholder="Phone Number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Subject">Subject</label>
+                    <select name="1" id="1">
+                        <option value="1">Choose Option</option>
+                        <option value="2">Java</option>
+                        <option value="3">Python</option>
+                        <option value="4">C++</option>
+                        <option value="5">C</option>
+                    </select>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button>Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>

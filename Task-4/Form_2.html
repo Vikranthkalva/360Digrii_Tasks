@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: rgb(4, 4, 43);
+            margin: 0;
+            padding: 0;
+        }
+        .signup-card {
+            width: 40%;
+            margin: 50px auto 0 auto;
+            background: #1b1b40;
+            border: 3px solid orange;
+            border-radius: 7px;
+            box-shadow: 0 0 16px rgba(0,0,0,0.20);
+        }
+        .header {
+            background: orangered;
+            color: white;
+            padding: 10px 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 4px 4px 0 0;
+            text-align: left;
+        }
+        .signup-form {
+            padding: 18px 26px 8px 26px;
+        }
+        .row {
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+        }
+        .row label {
+            width: 150px;
+            color: yellow;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            text-align: right;
+            margin-right: 35px;
+        }
+        .row input[type="text"], 
+        .row input[type="email"],
+        .row input[type="tel"],
+        .row input[type="password"],
+        .row select {
+            flex: 1;
+            background: #eaeaea;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            padding: 7px 9px;
+            font-size: 1em;
+        }
+        .row input[type="radio"] {
+            margin-left: 20px;
+            margin-right: 5px;
+        }
+        .row input[type="checkbox"] {
+            margin-left: 0;
+            margin-right: 8px;
+        }
+        .row1{
+            text-align: center;
+        }
+        .dob-select {
+            display: flex;
+            gap: 0 50px;
+        }
+        .footer {
+            background: orangered;
+            text-align: end;
+            border-radius: 0 0 4px 4px;
+            padding: 16px;
+        }
+        .footer button {
+            padding: 9px 26px;
+            /* margin: 0 4px; */
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+        .footer button[type="submit"] {
+            background: green;
+        }
+        .footer button[type="reset"] {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-card">
+        <div class="header">
+            <h3 style="margin:0">Sign Up</h3>
+        </div>
+        <form>
+            <div class="signup-form">
+                <div class="row">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="Enter First Name..">
+                </div>
+                <div class="row">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" name="last_name" placeholder="Enter Last Name..">
+                </div>
+                <div class="row">
+                    <label for="screen_name">Screen Name</label>
+                    <input type="text" id="screen_name" name="screen_name" placeholder="Enter Screen Name..">
+                </div>
+                <div class="row">
+                    <label>Date of Birth</label>
+                    <div class="dob-select">
+                        <select id="month" name="month">
+                            <option value="">Month</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <select id="date" name="date">
+                            <option value="">Date</option>
+                            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                            <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+                            <option>11</option><option>12</option><option>13</option><option>14</option><option>15</option>
+                            <option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
+                            <option>21</option><option>22</option><option>23</option><option>24</option><option>25</option>
+                            <option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+                            <option>31</option>
+                        </select>
+                        <select id="year" name="year">
+                            <option value="">Year</option>
+                            <option>1980</option><option>1981</option><option>1982</option><option>1983</option>
+                            <option>1984</option><option>1985</option><option>1986</option><option>1987</option>
+                            <option>1988</option><option>1989</option><option>1990</option><option>1991</option>
+                            <option>1992</option><option>1993</option><option>1994</option><option>1995</option>
+                            <option>1996</option><option>1997</option><option>1998</option><option>1999</option>
+                            <option>2000</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <label>Gender</label>
+                    <input type="radio" id="male" name="gender" value="male"><label for="male" style="width:auto;color:white;">Male</label>
+                    <input type="radio" id="female" name="gender" value="female"><label for="female" style="width:auto;color:white;">Female</label>
+                </div>
+                <div class="row">
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="">Select Country</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Enter E-mail..">
+                </div>
+                <div class="row">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter Phone..">
+                </div>
+                <div class="row">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="row">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm_password">
+                </div>
+                <div class="row1">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms" style="width:auto;color:yellow;">I agree to the Terms of Use</label>
+                </div>
+            </div>
+            <div class="footer">
+                <button type="submit">submit</button>
+                <button type="reset">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

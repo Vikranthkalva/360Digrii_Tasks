@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: serif;
+            background: #e6e6e0;
+            margin: 0;
+            padding: 0;
+        }
+        .form-container {
+            background: #d4d4cc;
+            width: 600px;
+            margin: 50px auto 0 auto;
+            padding: 30px 40px;
+            box-shadow: 3px 3px 12px rgba(0,0,0,0.13);
+            border: 1.5px solid #aaa;
+            border-radius: 10px;
+        }
+        .form-container h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 25px;
+            font-weight: bold;
+            text-decoration: underline;
+            
+        }
+        table {
+            margin: 0 auto;
+        }
+        td {
+            font-size: 1.08em;
+            font-weight: bold;
+            padding-bottom: 11px;
+        }
+        td:first-child {
+            padding-right: 15px;
+            text-align: right;
+            width: 160px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="password"],
+        input[type="number"] {
+            width: 290px;
+            padding: 5px 7px;
+            border: 1px solid #bbb;
+            border-radius: 4px;
+            background: #fff;
+            font-size: 1em;
+        }
+        input[type="radio"] {
+            margin-left: 14px;
+        }
+        textarea {
+            width: 290px;
+            height: 57px;
+            border: 1px solid #bbb;
+            border-radius: 4px;
+            padding: 5px;
+            background: #fff;
+            resize: none;
+        }
+        .form-buttons {
+            text-align: center;
+            padding-top: 18px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 6px 26px;
+            border: none;
+            border-radius: 4px;
+            background: #928d8d;
+            color: #121212;
+            font-size: 1em;
+            margin: 0 13px;
+            cursor: pointer;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <form class="form-container">
+        <h2>Registration form</h2>
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Nick Name</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>e-mail</td>
+                <td><input type="email" required></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" required></td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                    <input type="radio" name="gender" value="Others">Others
+                </td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea></textarea></td>
+            </tr>
+        </table>
+        <div class="form-buttons">
+            <input type="submit" value="SUBMIT">
+            <input type="reset" value="RESET">
+        </div>
+    </form>
+</body>
+</html>
