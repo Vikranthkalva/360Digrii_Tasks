@@ -1,0 +1,13 @@
+let employees2 = [
+  { name: "Alice", salary: 50000 },
+  { name: "Bob", salary: 60000 }
+];
+
+// 1. Add new employee
+employees2.push({ name: "Charlie", salary: 55000 });
+
+// 2. Remove Alice
+employees2 = employees2.filter(emp => emp.name !== "Alice");
+
+let totalSalary = employees2.reduce((sum, emp) => sum + emp.salary, 0);
+console.log("Total Salary:", totalSalary);
